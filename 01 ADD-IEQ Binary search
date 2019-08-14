@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include "bits/stdc++.h"
+using namespace std;
+
+int main (){
+	int n ,x ,k , left ,right;
+	vector<int> a;
+	
+
+cin>>n;
+ for(int i =0 ; i<n; i++){
+	 cin>>x;
+	a.push_back(x);
+ } 
+ cin>>k;
+ left= lower_bound (a.begin(),a.end(),k)-a.begin();
+ if (left=n || a[left]!=k)
+	 {
+	  cout<<"133"<<endl;
+	  }
+	  
+else{
+	right= upper_bound(a.begin(),a.end(),k)-a.begin();
+	cout<<left<<""<<right-1<<right-left<<endl;
+}
+return 0 ;
+
+}
