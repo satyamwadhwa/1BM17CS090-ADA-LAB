@@ -8,30 +8,14 @@ queue <int> q;
 void bfs(int v)
 {
 	cout<<v+1;
-	visited[v]=1;Enter the adjancency matrix : (n=4)
-1 0 0 1
-0 0 0 1
-0 1 0 1
-1 0 1 1 
-
-Enter the source vertex : 1
-1432
-
-	q.push(v);
+	visited[v]=1;
+        q.push(v);
 	while(!q.empty())
 	{
 		int curr=q.front();
 		q.pop();
 		for(int i=0;i<n;i++)
-				if(adEnter the adjancency matrix : (n=4)
-1 0 0 1
-0 0 0 1
-0 1 0 1
-1 0 1 1 
-
-Enter the source vertex : 1
-1432
-jacent[curr][i]&&!visited[i])
+				if(adjacent[curr][i]&&!visited[i])
 				{
 					q.push(i);
 					visited[i]=1;
